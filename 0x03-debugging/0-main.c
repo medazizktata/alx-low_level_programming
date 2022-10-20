@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * main - test function
+ * main - main block
  * Description: testing code
  * Return: 0
  */
