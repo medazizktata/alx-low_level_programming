@@ -8,19 +8,22 @@
  */
 int print_sign(int n)
 {
+	int x;
+
 	if (n > 0)
 	{
 		printf("+");
-		return (1);
+		x = 1;
 	}
 	if (n < 0)
 	{
 		printf("-");
-		return (-1);
+		x = -1;
 	}
 	if (n == 0)
 	{
 		printf("0");
-		return (0);
+		x = 0;
 	}
+	return (x);
 }
