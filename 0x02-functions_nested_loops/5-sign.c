@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_sign - main block
  *@n: parameter
@@ -12,17 +11,17 @@ int print_sign(int n)
 
 	if (n > 0)
 	{
-		printf("+");
+		_putchar("+");
 		x = 1;
 	}
 	if (n < 0)
 	{
-		printf("-");
+		_putchar("-");
 		x = -1;
 	}
 	if (n == 0)
 	{
-		printf("0");
+		_putchar("0");
 		x = 0;
 	}
 	return (x);
