@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - main block
+ * _isalpha - main block
  * @c: parameter
  * Description: check if c is a letter
  * Return: 0 or 1
