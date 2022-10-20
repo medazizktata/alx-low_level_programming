@@ -5,7 +5,7 @@
  * Description: absolute value of integer
  * Return: absolute value
  */
-int _abs(int n);
+int _abs(int n)
 {
 	int x;
 
