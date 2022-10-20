@@ -18,7 +18,7 @@ void print_to_98(int n)
 			_putchar(' ');
 		}
 	}
-	else
+	else if (n > 98)
 	{
 		for (j = n ; j >= 98 ; j--)
 		{
@@ -27,4 +27,6 @@ void print_to_98(int n)
 			_putchar(' ');
 		}
 	}
+	else if (n == 98)
+		_putchar(98);
 }
