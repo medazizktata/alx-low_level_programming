@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	int i;
+	int i = 'a'
 
-	for (i = 97 ; i < 123 ; i++)
+	while (i <= 'z')
 	{
-		putchar (i);
+		_putchar (i);
+		i++;
 	}
-	putchar(10);
-	return (0);
+	_putchar('\n');
 }
