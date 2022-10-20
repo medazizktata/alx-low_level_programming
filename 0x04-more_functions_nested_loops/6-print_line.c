@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * print_line - block
- * @n: parameter
  * Description: draws a line
- * Return: a line
+ *@n: parameter
+ * Return: void
  */
 void print_line(int n)
 {
