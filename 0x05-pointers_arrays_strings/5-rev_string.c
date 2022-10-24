@@ -11,12 +11,16 @@ void rev_string(char *s)
 
 	int j;
 
+	char c;
+
 	while (s[i] != '\0')
 	{
 		i++;
 	}
-	for (j = i - 1 ; j >= 0 ; j--)
+	for (j = 0 ; j < i / 2 ; j++)
 	{
-		_putchar(s[j]);
+		c = s[j];
+		s[j] = s[i - j - 1];
+		s[i - j - 1] = c;
 	}
 }
