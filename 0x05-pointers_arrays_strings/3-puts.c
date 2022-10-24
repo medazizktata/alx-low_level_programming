@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * _puts - block
- * @str: parameter
+ * @str: pointer parameter
  * Description: prints a string
- * Return: void
+ * Return: none
  */
 void _puts(char *str)
 {
@@ -12,6 +12,7 @@ void _puts(char *str)
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
+		i++
 	}
 	_putchar('\n');
 }
