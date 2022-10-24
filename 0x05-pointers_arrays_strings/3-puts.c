@@ -5,7 +5,7 @@
  * Description: prints a string
  * Return: void
  */
-void _puts(chat *str)
+void _puts(char *str)
 {
 	int i = 0;
 
