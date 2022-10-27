@@ -7,7 +7,7 @@
  * @n: parameter
  * Return: pointer
  */
-char *_strncpy(char *dest, char *src, ont n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
