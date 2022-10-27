@@ -2,10 +2,10 @@
 /**
  * *_strncpy - block
  * Description: copies a string
- * @dest: pointer
- * @src: pointer
- * @n: parameter
- * Return: pointer
+ * @dest: parameter1
+ * @src: parameter2
+ * @n: parameter3
+ * Return: none
  */
 char *_strncpy(char *dest, char *src, int n)
 {
