@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strncpy - block
+ * _strncpy - block
  * Description: copies a string
  * @dest: parameter1
  * @src: parameter2
