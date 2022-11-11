@@ -6,7 +6,7 @@
  * @c: parameter2
  * Return: pointer
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	unsigned int i = 0;
 
