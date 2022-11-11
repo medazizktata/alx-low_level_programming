@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _memset - block
+ * _strchr - block
  * Description: locates a character in a string
  * @s: parameter1
  * @c: parameter2
