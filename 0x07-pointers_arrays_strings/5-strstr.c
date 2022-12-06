@@ -22,7 +22,6 @@ char *_strstr(char *haystack, char *needle)
 				if (chaine == needle)
 				{
 					return (haystack);
-					continue;
 				}
 			}
 		}
