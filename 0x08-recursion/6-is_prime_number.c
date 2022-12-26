@@ -19,7 +19,7 @@ int is_prime(unsigned int n, unsigned int c)
 	}
 	return (0 + is_prime(n, c + 1));
 }
-/***
+/**
  * is_prime_number - block
  * Description: detects if an input is a prime number ot not
  * @n: parameter1
