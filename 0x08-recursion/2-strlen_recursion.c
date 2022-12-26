@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * _strlen_recursion - main block
  * Description: returns the length of a string
  * @s: parameter1
@@ -11,7 +11,7 @@ int _strlen_recursion(char *s)
 
 	if (*s != '\0')
 	{
-		som += _strlen_recursion(s + 1);
+		som += _strlen_recursion(s + 1) + 1;
 	}
 	return (som);
 }
