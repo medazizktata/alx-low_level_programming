@@ -20,6 +20,9 @@ int **alloc_grid(int width, int height)
 		array[i] = calloc(width, sizeof(int));
 	}
 	if (array == NULL)
+	{
+		free(array);
 		return (NULL);
+	}
 	return (array);
 }
