@@ -49,7 +49,7 @@ char *argstostr(int ac, char **av)
 	int i, j, som;
 
 	som = 0;
-	nl = malloc(size of(char));
+	nl = malloc(sizeof(char));
 	*nl = '\n';
 	if (ac == 0 || av == NULL)
 		return (NULL);
