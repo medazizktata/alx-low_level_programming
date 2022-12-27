@@ -58,8 +58,8 @@ char *str_concat(char *s1, char *s2)
 		free(ccn);
 		return (NULL);
 	}
-	str_ccn(ccn, s1, s1_len);
-	str_ccn(ccn, s2, s2_len);
+	str_ccn(ccn, s1, len_s1);
+	str_ccn(ccn, s2, len_s2);
 	ccn += '\0';
 	return (ccn);
 }
