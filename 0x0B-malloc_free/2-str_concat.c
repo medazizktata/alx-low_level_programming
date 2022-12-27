@@ -36,4 +36,5 @@ char *str_concat(char *s1, char *s2)
 	for (l = 0; l < j; l++)
 		ccn[l + i] = s2[l];
 	return (ccn);
+	free(ccn);
 }
