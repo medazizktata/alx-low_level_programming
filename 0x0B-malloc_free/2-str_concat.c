@@ -22,7 +22,7 @@ int str_len(char *s)
  * @n: parameter
  * Return: pointer
  */
-char *str_ccn(char *ch; char *sh, int n)
+char *str_ccn(char *ch, char *sh, int n)
 {
 	int chlen, i;
 
