@@ -44,9 +44,13 @@ char *argstostr(int ac, char **av)
 {
 	char *ccn;
 
+	char *nl;
+
 	int i, j, som;
 
 	som = 0;
+	nl = malloc(size of(char));
+	*nl = '\n';
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
@@ -62,7 +66,7 @@ char *argstostr(int ac, char **av)
 	for (j = 0; j < ac; j++)
 	{
 		strccn(ccn, av[i], stringlen(av[i]));
-		strccn(ccn, '\n', 1);
+		strccn(ccn, nl, 1);
 	}
 	if (ccn == NULL)
 	{
