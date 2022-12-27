@@ -15,14 +15,14 @@ int str_len(char *s)
 	return (i);
 }
 /**
- * str_ccn - block
+ * _str_ccn - block
  * Description: concatenates two strings
  * @ch: parameter
  * @sh: parameter
  * @n: parameter
  * Return: pointer
  */
-char *str_ccn(char *ch, char *sh, int n)
+char *_str_ccn(char *ch, char *sh, int n)
 {
 	int chlen, i;
 
@@ -58,8 +58,8 @@ char *str_concat(char *s1, char *s2)
 		free(ccn);
 		return (NULL);
 	}
-	str_ccn(ccn, s1, len_s1);
-	str_ccn(ccn, s2, len_s2);
+	_str_ccn(ccn, s1, len_s1);
+	_str_ccn(ccn, s2, len_s2);
 	ccn += '\0';
 	return (ccn);
 }
