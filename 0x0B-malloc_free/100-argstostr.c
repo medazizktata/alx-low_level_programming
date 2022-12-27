@@ -1,12 +1,12 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * strlen - block
+ * stringlen - block
  * Description: returns length of string
  * @s: parameter
  * Return: integer
  */
-int strlen(char *s)
+unsigned int stringlen(char *s)
 {
 	int i;
 
@@ -26,7 +26,7 @@ char *strccn(char *ch, char *sh, int n)
 {
 	int i, chlen;
 
-	chlen = strlen(ch);
+	chlen = stringlen(ch);
 	for (i = 0; i < n && ch[i] != '\0'; i++)
 	{
 		ch[i + chlen] = sh[i];
@@ -44,18 +44,20 @@ char *argstostr(int ac, char **av)
 {
 	char *ccn;
 
+	int i;
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		av[i] += '\n';
-		ccn = malloc(strlen(av[i]) * sizeof(char));
+		ccn = malloc(stringlen(av[i]) * sizeof(char));
 		if (ccn == NULL)
 		{
 			free(ccn);
 			return (NULL);
 		}
-		strccn(ccn, av[i], strlen(av[i]));
+		strccn(ccn, av[i], stringlen(av[i]));
 	}
 	if (ccn == NULL)
 	{
