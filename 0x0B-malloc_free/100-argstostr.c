@@ -6,7 +6,7 @@
  * @s: parameter
  * Return: integer
  */
-int strlen(char s)
+int strlen(char *s)
 {
 	int i;
 
