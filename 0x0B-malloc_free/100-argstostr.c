@@ -44,21 +44,24 @@ char *argstostr(int ac, char **av)
 {
 	char *ccn;
 
-	int i;
+	int i, j, som;
 
+	som = 0;
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		av[i] += '\n';
-		ccn = malloc(stringlen(av[i]) + 1);
-		if (ccn == NULL)
-		{
-			free(ccn);
-			return (NULL);
-		}
-		strccn(ccn, av[i], stringlen(av[i]));
+		som += stringlen(av[i]);
 	}
+	ccn = malloc((som + 1) * sizeof(char));
+	if (ccn == NULL)
+	{
+		free(ccn);
+		return (NULL);
+	}
+	for (j = 0; j < ac; j++)
+		strccn(ccn, av[i], stringlen(av[i]));
 	if (ccn == NULL)
 	{
 		free(ccn);
