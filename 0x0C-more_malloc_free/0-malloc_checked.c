@@ -4,7 +4,7 @@
  * malloc_checked - main block
  * Description: allocates memory
  * @b: parameter
- * Return: pointer
+ * Return: void
  */
 void *malloc_checked(unsigned int b)
 {
@@ -13,7 +13,6 @@ void *malloc_checked(unsigned int b)
 	ptr = malloc(b);
 	if (ptr == 0)
 	{
-		free(ptr);
 		exit(98);
 	}
 	return (ptr);
