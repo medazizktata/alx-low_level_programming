@@ -1,4 +1,5 @@
 #include <stdlib.b>
+#include <stdio.h>
 #include "main.h"
 /**
  * malloc_checked - main block
