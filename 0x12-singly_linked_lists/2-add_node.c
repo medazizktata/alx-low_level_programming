@@ -5,7 +5,7 @@
  * @ch: parameter
  * Return: int
  */
-int _strlen(char ch)
+int _strlen(const char *ch)
 {
 	int i = 0;
 
@@ -22,7 +22,6 @@ int _strlen(char ch)
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	char ch = srtdup(str);
 	list_t *newnode;
 
 	newnode = malloc(sizeof(list_t));
@@ -41,7 +40,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	else
 	{
-		newnode->str = ch;
+		newnode->str = strdup(str);
 		if (newnode->str == NULL)
 		{
 			free(newnode);
