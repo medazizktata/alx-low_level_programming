@@ -9,17 +9,16 @@
 void print_binary(unsigned long int n)
 {
 	int i;
-
-	for (i = sizeof(unsigned long int) * 8 - 1; i >= 0; i--)
+	if (n > 1)
 	{
-		if (n & (1UL << i))
-		{
-			_putchar('1');
-		}
-		else
-		{
-			_putchar('0');
-		}
+		print_binary(n >> 1);
 	}
-	putchar('\n');
+	if (n & 1)
+	{
+		_putchar('1');
+	}
+	else
+	{
+		_putchar('0');
+	}
 }
