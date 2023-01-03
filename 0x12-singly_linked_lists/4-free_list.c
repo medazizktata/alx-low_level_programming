@@ -7,5 +7,10 @@
  */
 void free_list(listt *head)
 {
+	if (head == NULL)
+		return;
+	if ((*head).next != NULL)
+		free_list((*head).next);
+	free((*head).next);
 	free(head);
 }
