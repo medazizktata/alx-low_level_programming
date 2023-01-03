@@ -20,7 +20,7 @@ int _strlen(const char *str)
  * @str: parameter2
  * Return: adress
  */
-lits_t *add_node_end(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newnode;
 	list_t *endnode:
