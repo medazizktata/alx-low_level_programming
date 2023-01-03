@@ -10,6 +10,9 @@ size_t listint_len(const listint_t *h)
 	int s = 0;
 
 	while (h != NULL)
+	{
 		s++;
+		h = (*h).next;
+	}
 	return (s);
 }
