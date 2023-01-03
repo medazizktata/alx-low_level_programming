@@ -7,7 +7,7 @@
  * @n: int
  * Return: list
  */
-listin_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	unsigned int i;
 	listint_t *newnode;
@@ -21,6 +21,12 @@ listin_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	if (i == idx)
 		return (NULL);
+	newnode = malloc(sizeof(listint_t));
+	if (newnode == NULL)
+	{
+		free(newnode);
+		return (NULL);
+	}
 	node = (**head).next;
 	(**head).next = newnode;
 	(*newnode).n = n;
