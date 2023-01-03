@@ -8,13 +8,15 @@
 int pop_listint(listint_t **head)
 {
 	int s;
+	listint_t *pop_node;
 
 	if (head == NULL)
 		return (0);
 	if (*head == NULL)
 		return (0);
+	pop_node = *head;
 	s = (**head).n;
 	*head = (**head).next;
-	free(*head);
+	free(pop_node);
 	return (s);
 }
