@@ -1,5 +1,4 @@
-#include <main.h>
-#include <stdio.h>
+#include "main.h"
 /**
  * _puts_recursion - main block
  * Desciption: print a string
