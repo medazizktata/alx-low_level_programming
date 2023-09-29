@@ -7,7 +7,7 @@
  */
 int is_palindrome(char *s)
 {
-	char r;
+	char r = ' ';
 
 	if (*s == '\0')
 		return (1);
