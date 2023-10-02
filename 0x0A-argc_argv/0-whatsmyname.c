@@ -1,5 +1,12 @@
 #include <stdio.h>
-int main(int argc, char *argv[])
+/**
+* main - block
+* Description: print number of arguments
+* @argc: arg1
+* @argv: arguments array
+* Return: 0
+*/
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	if (argc > 0)
 	{
