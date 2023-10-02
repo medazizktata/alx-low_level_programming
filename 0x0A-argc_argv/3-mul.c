@@ -2,20 +2,24 @@
 #include <stdlib.h>
 /**
 * main - block
-* Description: print number of arguments
+* Description: multiply ,umbers
 * @argc: arg1
 * @argv: arguments array
 * Return: 0
 */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int m;
-	if(argc==3){
-		int n1=atoi(argv[1]);
-		int n2=atoi(argv[2]);
-		m=n1*n2;
+
+	if (argc == 3)
+	{
+		int n1 = atoi(argv[1]);
+
+		int n2 = atoi(argv[2]);
+
+		m = n1 * n2;
 		printf("%d\n", m);
-		return 0;
+		return (0);
 	}
 	else
 	{
