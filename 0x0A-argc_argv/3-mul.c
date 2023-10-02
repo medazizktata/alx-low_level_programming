@@ -1,5 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+* main - block
+* Description: print number of arguments
+* @argc: arg1
+* @argv: arguments array
+* Return: 0
+*/
 int main(int argc, char* argv[])
 {
 	int m;
