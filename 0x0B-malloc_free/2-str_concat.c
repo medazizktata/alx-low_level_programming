@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * str_concat - block
- * Description: concatenate two strings
+ * Description: concatenate two strings together
  * @s1: paramter1
  * @s2: parameter2
  * Retrun: string
@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	while (j < size2)
 	{
-		s[i+j] = s2[j];
+		s[i + j] = s2[j];
 		j++;
 	}
 	s[sizes - 1] = '\0';
