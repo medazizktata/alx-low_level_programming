@@ -1,1 +1,1 @@
-Hii this is a new fucking readmefile
+This is a README file for 0x09-static_libraries powered by ALX
