@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _strdup - block
+ * i_strdup - block
  * Description: pointer to new allocated space
  * @str: parameter
  * Return: pointer
  */
 char *_strdup(char *str)
 {
-	int i;
+	int i, size;
 
 	char *s;
 
@@ -15,11 +15,16 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	size = 0;
+
+	while (str[size] != '\0')
+		size++;
+	s = (char *)malloc(sizeof(char) * (size + 1));
+	if (s == NULL)
+		return (NULL);
 	i = 0;
 
-	while (str[i] != '\0')
-		i++;
-	s = (char *)malloc(sizeof(char) * i);
-	*s = *str;
+	while (i <= size)
+		s[i] = str[i];
 	return (s);
 }
