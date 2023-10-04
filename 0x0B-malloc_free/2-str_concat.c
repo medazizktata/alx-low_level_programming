@@ -26,6 +26,11 @@ char *str_concat(char *s1, char *s2)
 		size2++;
 	sizes = size1 + size2 + 1;
 	s = malloc(sizes * sizeof(char));
+	if (s == NULL)
+	{
+		free(s);
+		return (NULL);
+	}
 	i = 0;
 
 	j = 0;
@@ -37,14 +42,9 @@ char *str_concat(char *s1, char *s2)
 	}
 	while (j < size2)
 	{
-		s[i] = s2[j];
+		s[i+j] = s2[j];
 		j++;
 	}
 	s[sizes - 1] = '\0';
-	if (s == NULL)
-	{
-		free(s);
-		return (NULL);
-	}
 	return (s);
 }
