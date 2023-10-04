@@ -4,7 +4,7 @@
  * Description: concatenate two strings together
  * @s1: paramter1
  * @s2: parameter2
- * Retrun: string
+ * Return: string
  */
 char *str_concat(char *s1, char *s2)
 {
