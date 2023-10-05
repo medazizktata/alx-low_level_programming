@@ -14,7 +14,7 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	s = callac(ac, sizeof(char);
+	s = calloc(ac, sizeof(char);
 	for (i = 0; i < ac; i++)
 	{
 		s += av[i];
