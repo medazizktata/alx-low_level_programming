@@ -8,17 +8,17 @@
 */
 char *argstostr(int ac, char **av)
 {
-	char s;
+	char *s;
 
 	int i;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	s = calloc(ac, sizeof(char);
+	s = calloc(ac, sizeof(char));
 	for (i = 0; i < ac; i++)
 	{
-		s += av[i];
-		s += '\n';
+		*s += av[i];
+		*s += '\n';
 	}
 	if (s == NULL)
 	{
