@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
 	s = calloc(ac, sizeof(char));
 	for (i = 0; i < ac; i++)
 	{
-		*s += av[i];
+		s += av[i];
 		*s += '\n';
 	}
 	if (s == NULL)
