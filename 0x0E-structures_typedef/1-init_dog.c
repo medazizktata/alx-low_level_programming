@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 /**
 * init_dog - block
 * Description:  initialize a variable of type struct dog
@@ -6,11 +6,15 @@
 * @name: parameter2
 * @age: parameter3
 * @owner: parameter4
-* Return: pointer to void
+* Return: void
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d->name = name;
-	d->age = age;
-	d->owner = owner;	
+	
+	if (d)
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
 }
