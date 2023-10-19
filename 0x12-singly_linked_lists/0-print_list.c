@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * print_list - block
  * Description: prints all the elements of a list_t list.
@@ -20,6 +20,5 @@ size_t print_list(const list_t *h)
 		}
 		h = h->next;
 	}
-	printf("-> %d elements", s);
-
+	return (s);
 }
