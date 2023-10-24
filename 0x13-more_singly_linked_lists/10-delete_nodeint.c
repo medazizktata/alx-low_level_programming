@@ -1,11 +1,10 @@
 #include "lists.h"
 /**
-* deletenodeint_at_index - block
-* Description: inserts a new node at a given position
+* delete_nodeint_at_index - block
+* Description: deletes a node nth position
 * @head: parameter1
-* @idx: parameter2
-* @n: parameter3
-* Return: pointer to listint_t
+* @index: parameter2
+* Return: int
 */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -24,6 +23,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 			temp = temp->next;
 		}
 	}
+	if (temp == NULL || (temp != NULL && index != 0))
+		return (-1);
 	if (index == 0)
 	{
 		*head = temp->next;
@@ -33,7 +34,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	else
 	{
 		temp->next = temp->next->next;
-		temp->next->next = NULL;
 		free(temp->next);	
 	}
 	return (1);
