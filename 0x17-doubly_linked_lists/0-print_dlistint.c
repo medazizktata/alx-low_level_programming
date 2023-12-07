@@ -1,12 +1,19 @@
-#include "main.h"
+#include "lists.h"
 /**
 * print_dlistint - block
 * Description: prints all the elements of a dlistint_t list.
-* @size_t: parameter1
-* @const: parameter2
-* @dlistint_t: parameter3
-* @h: parameter4
-* Return: pointer to size_t
+* @h: parameter
+* Return: size_t
 */
-size_t print_dlistint(const dlistint_t *h) {
+size_t print_dlistint(const dlistint_t *h)
+{
+	size_t number;
+
+	while (h != NULL)
+	{
+		printf("%d\n", h->n);
+		h = h->next;
+		number++;
+	}
+	return (number);
 }
