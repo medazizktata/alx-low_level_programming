@@ -1,24 +1,20 @@
 #include "lists.h"
 /**
-* insert_dnodeint_at_index - block
-* Description: inserts a new node at a given position
+* delete_dnodeint_at_index - block
+* Description: deletes a new node at a given position
 * @h: parameter
 * @idx: parameter4
 * @n: parameter
 * Return: pointer to dlistint_t
 */
-dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int inde)
 {
-	dlistint_t *current, *new;
+	dlistint_t *current;
 	unsigned int number = 0;
 
 	current = *h;
-	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
-		return (NULL);
 	if (current == NULL && idx != 0)
 	{
-		free(new);
 		return (NULL);
 	}
 	if (idx == 0)
