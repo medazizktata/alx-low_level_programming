@@ -2,43 +2,35 @@
 /**
 * delete_dnodeint_at_index - block
 * Description: deletes a new node at a given position
-* @h: parameter
-* @idx: parameter4
-* @n: parameter
-* Return: pointer to dlistint_t
+* @head: parameter
+* @index: parameter4
+* Return: int
 */
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int inde)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *current;
 	unsigned int number = 0;
 
 	current = *h;
-	if (current == NULL && idx != 0)
+	if (current == NULL)
 	{
-		return (NULL);
+		return (-1);
 	}
-	if (idx == 0)
+	if (index == 0)
 	{
-		add_dnodeint(&new, n);
-		return (new);
+		free(current);
+		return (1);
 	}
 	while (current != NULL)
 	{
-		if (idx == number)
+		if (index == number)
 		{
-			new->n = n;
-			new->prev = current->prev;
-			new->next = current;
-			if (current->prev != NULL)
-				current->prev->next = new;
-			else
-				*h = new;
-			current->prev = new;
-			return (new);
+			current->prev->next = current->next;
+			current->next->prev = current->prev;
+			return (1);
 		}
 		number++;
 		current = current->next;
 	}
-	free(new);
-	return (NULL);
+	return (-1);
 }
